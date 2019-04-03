@@ -12,9 +12,6 @@ class Intro extends React.Component{
         <p style={styles.ptag} >
           feel free to use this resource as you may.
         </p>
-        <p style={styles.ptag} >
-          Don't bother registering or signing up for an account. it will not do anything as I am too lazy to actually set it up.
-        </p>
       </Segment>
     )
   }
@@ -26,7 +23,8 @@ const styles = {
     // justifyContent: 'center',
   },
   ptag: {
-    textAlign: "center"
+    textAlign: "center",
+    fontSize: "18px",
   }
 }
 

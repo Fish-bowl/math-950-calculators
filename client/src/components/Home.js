@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Container, Header, Segment } from 'semantic-ui-react';
+import { Container, Divider, Segment } from 'semantic-ui-react';
 import Calculators from './Calculators';
 import Intro from './Intro';
+import Wolfram from './Wolfram';
 
 class Home extends Component {
   render() {
@@ -11,6 +12,8 @@ class Home extends Component {
         <Segment inverted>
           <Calculators />
         </Segment>
+        <Divider/>
+        <Wolfram />
       </Container>
     );
   }

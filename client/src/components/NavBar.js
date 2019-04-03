@@ -37,6 +37,9 @@ class NavBar extends Component {
           <Link to="/">
             <Menu.Item name="Math 950 Module 5" />
           </Link>
+          <Link to="/calculator">
+            <Menu.Item name="Calculator" />
+          </Link>
         </Menu>
       </div>
     );
