@@ -17,7 +17,9 @@ class Home extends Component {
         <Divider/>
         <Wolfram />
         <Divider />
-        <Footer />
+        <Segment basic style={{display: 'flex', justifyContent: 'center'}} >
+          <Footer />
+        </Segment>
         <Divider />
       </div>
     );
