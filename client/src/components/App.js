@@ -13,7 +13,7 @@ import Calculator from './Calculator';
 class App extends Component {
   render() {
     return (
-      <div style={{backgroundColor: 'black'}}>
+      <div style={{backgroundColor: 'black', height: '100%'}}>
         <NavBar />
         <Flash />
         <FetchUser>
