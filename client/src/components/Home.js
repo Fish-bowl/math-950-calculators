@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {Divider, Segment } from 'semantic-ui-react';
-import Calculators from './Calculators';
+import {Divider, Header, Button, Segment } from 'semantic-ui-react';
 import Intro from './Intro';
 import Wolfram from './Wolfram';
 import Footer from './Footer';
+import ModuleButtons from './ModuleButtons';
 
 class Home extends Component {
   render() {
@@ -11,9 +11,7 @@ class Home extends Component {
       <div style={styles.container} >
         <Intro />
         <Divider />
-        <Segment inverted>
-          <Calculators />
-        </Segment>
+        <ModuleButtons />
         <Divider/>
         <Wolfram />
         <Divider />

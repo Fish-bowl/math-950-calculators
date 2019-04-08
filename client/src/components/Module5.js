@@ -1,18 +1,19 @@
 import React from 'react'
-import {Card, Segment, Header,} from 'semantic-ui-react'
+import { Container, Card, Segment, Header, } from 'semantic-ui-react'
+import Footer from './Footer'
 
 const RatioItems = [
   {
     header: 'Ratio Calculator for solving a missing variable',
     description: 'A : B = C : D',
-    href: "https://www.calculatorsoup.com/calculators/math/ratios.php" ,
+    href: "https://www.calculatorsoup.com/calculators/math/ratios.php",
     target: '_blank'
   },
   {
     header: 'Ratio Simplifier for bringing ratios to simplest terms',
     description: 'A : B = A : B. You must have at least one',
     href: "https://www.calculatorsoup.com/calculators/math/ratio-simplifier.php",
-    target: '_blank' 
+    target: '_blank'
   },
   {
     header: 'Unit Rate Calculator for calculating the base unnit rate for a ratio',
@@ -73,26 +74,29 @@ const InterestItems = [
   }
 ]
 
-class Calculators extends React.Component{
+class Module5 extends React.Component {
   render() {
-    return(
-      <Segment inverted>
-        <Header as='h1'>Ratios:</Header>
+    return (
+      <Container style={styles.container}>
+        <Segment inverted>
+          <Header as='h1'>Ratios:</Header>
 
-        <Card.Group style={styles.card_group} items={RatioItems} />
+          <Card.Group style={styles.card_group} items={RatioItems} />
 
-        <Header as='h1'>Fractions:</Header>
+          <Header as='h1'>Fractions:</Header>
 
-        <Card.Group style={styles.card_group} items={FractionItems} />
+          <Card.Group style={styles.card_group} items={FractionItems} />
 
-        <Header as='h1'>Percentage:</Header>
+          <Header as='h1'>Percentage:</Header>
 
-        <Card.Group style={styles.card_group} items={PercentageItems} />
+          <Card.Group style={styles.card_group} items={PercentageItems} />
 
-        <Header as='h1'>Simple Interest:</Header>
+          <Header as='h1'>Simple Interest:</Header>
 
-        <Card.Group style={styles.card_group} items={InterestItems} />
-      </Segment>
+          <Card.Group style={styles.card_group} items={InterestItems} />
+        </Segment>
+        <Footer />
+      </Container>
     )
   }
 }
@@ -101,7 +105,12 @@ const styles = {
   card_group: {
     display: 'flex',
     justifyContent: 'center',
+  },
+  container: {
+    margin: '45px',
+    backgroundColor: 'black',
+    minHeight: '100vh'
   }
 }
 
-export default Calculators
+export default Module5
