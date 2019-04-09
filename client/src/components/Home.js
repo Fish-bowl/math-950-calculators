@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
-import {Divider, Header, Button, Segment } from 'semantic-ui-react';
+import {Divider,Container, Segment } from 'semantic-ui-react';
 import Intro from './Intro';
 import Wolfram from './Wolfram';
-import Footer from './Footer';
 import ModuleButtons from './ModuleButtons';
 
 class Home extends Component {
   render() {
     return (
-      <div style={styles.container} >
+      <Container>
+      {/* <div style={styles.container} > */}
         <Intro />
         <Divider />
         <ModuleButtons />
         <Divider/>
         <Wolfram />
         <Divider />
-        <Segment basic style={{display: 'flex', justifyContent: 'center'}} >
-          <Footer />
+        <Segment 
+          basic  
+          style={{display: 'flex', justifyContent: 'center'}} 
+        >
         </Segment>
         <Divider />
-      </div>
+      {/* </div> */}
+      </Container>
     );
   }
 }

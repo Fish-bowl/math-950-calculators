@@ -11,6 +11,7 @@ import FetchUser from './FetchUser';
 import Calculator from './Calculator';
 import Module5 from './Module5'
 import Module6 from './Module6';
+import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -28,7 +29,8 @@ class App extends Component {
             <Route exact path='/calculator' component={Calculator} />
             <Route component={NoMatch} />
           </Switch>
-        </FetchUser> 
+        </FetchUser>
+        <Footer />
       </div>
     );
   }

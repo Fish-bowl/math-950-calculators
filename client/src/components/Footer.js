@@ -5,7 +5,7 @@ class Footer extends React.Component{
   render() {
     return (
       <Segment inverted style={styles.segment} >
-        <Header textAlign='center' as='h1'> Thank you for checking out my math resource all credit for the calculators belongs to the destination of each link</Header>
+        <Header textAlign='center' as='h1'> Thank you for checking out math-950-calcs all credit for the calculators belongs to the destination of each link.</Header>
       </Segment>
     )
   }

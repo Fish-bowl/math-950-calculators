@@ -35,7 +35,7 @@ class NavBar extends Component {
       <div>
         <Menu inverted style={{display: 'flex', justifyContent: 'center'}} size='huge' pointing secondary>
           <Link to="/Module5">
-            <Menu.Item name="Module 5" />
+            <Menu.Item style={styles.item} name="Module 5" />
           </Link>
           <Link to="/">
             <Menu.Item name='Home' />
@@ -43,12 +43,18 @@ class NavBar extends Component {
           <Link to="/calculator">
             <Menu.Item name="Calculator" />
           </Link>
-          <Link to="/Module6">
+          <Link style={styles.item} to="/Module6">
             <Menu.Item name="Module 6" />
           </Link>
         </Menu>
       </div>
     );
+  }
+}
+
+const styles = {
+  item: {
+    textAlign: 'center'
   }
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Card, Segment, Header, } from 'semantic-ui-react'
-import Footer from './Footer'
+
 
 const RatioItems = [
   {
@@ -95,7 +95,6 @@ class Module5 extends React.Component {
 
           <Card.Group style={styles.card_group} items={InterestItems} />
         </Segment>
-        <Footer />
       </Container>
     )
   }
